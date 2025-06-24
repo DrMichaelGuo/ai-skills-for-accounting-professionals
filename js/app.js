@@ -179,7 +179,6 @@ class AISkillsApp {
         const modalDescription = document.getElementById('modalDescription');
         const modalApplications = document.getElementById('modalApplications');
         const modalProficiency = document.getElementById('modalProficiency');
-        const modalIndustry = document.getElementById('modalIndustry');
 
         modalTitle.textContent = skill.title;
         modalCategory.innerHTML = `
@@ -206,13 +205,6 @@ class AISkillsApp {
                     ${this.renderProficiencyDots(skill.proficiency)}
                 </div>
                 <span class="proficiency-label">${this.capitalizeFirst(skill.proficiency)}</span>
-            </div>
-        `;
-
-        modalIndustry.innerHTML = `
-            <h4>Industry Relevance</h4>
-            <div class="industry-tags">
-                ${skill.industryRelevance.map(industry => `<span class="industry-tag">${industry}</span>`).join('')}
             </div>
         `;
 
@@ -273,10 +265,6 @@ class AISkillsApp {
 // Global functions for button actions
 function scrollToSkills() {
     app.smoothScrollTo('#skills');
-}
-
-function openAbout() {
-    alert('About section coming soon! This database provides comprehensive AI skills for accounting professionals, educators, and students.');
 }
 
 function performSearch() {
