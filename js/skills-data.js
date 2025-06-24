@@ -15,6 +15,88 @@ const skillsDatabase = {
     },
     
     skills: [
+        // Basic Level Skills
+        {
+            id: 11,
+            title: "AI Awareness & Terminology",
+            category: "technical",
+            description: "Understanding fundamental AI concepts, terminology, and basic applications in accounting contexts.",
+            applications: [
+                "Recognising AI vs. traditional software",
+                "Understanding machine learning basics",
+                "Identifying AI opportunities in daily tasks",
+                "Basic AI terminology and concepts"
+            ],
+            proficiency: "basic",
+            industryRelevance: ["All Sectors"],
+            tags: ["Fundamentals", "Terminology", "Awareness"],
+            detailedDescription: "This foundational skill involves understanding what AI is, how it differs from traditional software, and recognising basic AI applications in accounting. It includes familiarity with common AI terminology such as machine learning, natural language processing, and automation. This skill helps accounting professionals identify where AI might be beneficial in their work and communicate effectively about AI initiatives."
+        },
+        {
+            id: 12,
+            title: "Basic Data Preparation",
+            category: "technical",
+            description: "Preparing and organising data for AI tools, including basic data cleaning and formatting techniques.",
+            applications: [
+                "Excel data cleaning and formatting",
+                "Preparing datasets for AI analysis",
+                "Basic data quality checks",
+                "Understanding data requirements for AI tools"
+            ],
+            proficiency: "basic",
+            industryRelevance: ["All Sectors"],
+            tags: ["Data Preparation", "Excel", "Data Quality"],
+            detailedDescription: "This skill covers the essential task of preparing data for AI applications. It includes basic data cleaning techniques in Excel or similar tools, understanding what makes data suitable for AI analysis, and performing quality checks to ensure accuracy. This is often the first step in any AI implementation and is crucial for getting reliable results from AI tools."
+        },
+        {
+            id: 13,
+            title: "Using Pre-built AI Tools",
+            category: "technical",
+            description: "Operating existing AI-powered accounting software and tools with basic customisation capabilities.",
+            applications: [
+                "Using AI features in accounting software",
+                "Basic chatbot interactions for queries",
+                "Automated expense categorisation tools",
+                "AI-powered invoice processing"
+            ],
+            proficiency: "basic",
+            industryRelevance: ["All Sectors", "Small Business"],
+            tags: ["Software Usage", "Automation", "Tools"],
+            detailedDescription: "This skill involves effectively using AI features that are already built into accounting software or standalone AI tools. It includes understanding how to configure basic settings, interpret AI-generated suggestions, and verify AI outputs. This skill is essential for accountants who want to leverage existing AI capabilities without needing programming knowledge."
+        },
+        {
+            id: 14,
+            title: "AI Ethics & Professional Standards",
+            category: "human",
+            description: "Understanding ethical considerations and professional responsibilities when using AI in accounting practice.",
+            applications: [
+                "Professional ethics with AI tools",
+                "Client confidentiality in AI systems",
+                "Understanding AI bias implications",
+                "Maintaining professional scepticism with AI"
+            ],
+            proficiency: "basic",
+            industryRelevance: ["All Sectors", "Professional Services"],
+            tags: ["Ethics", "Professional Standards", "Responsibility"],
+            detailedDescription: "This fundamental skill addresses the ethical and professional considerations when using AI in accounting. It includes understanding how professional accounting standards apply to AI use, maintaining client confidentiality when using AI tools, recognising potential bias in AI systems, and maintaining appropriate professional scepticism. This skill is essential for all accounting professionals regardless of their technical AI expertise."
+        },
+        {
+            id: 15,
+            title: "Basic AI Communication",
+            category: "human",
+            description: "Communicating about AI initiatives, limitations, and benefits to colleagues and clients in simple terms.",
+            applications: [
+                "Explaining AI benefits to clients",
+                "Discussing AI limitations honestly",
+                "Basic AI project communication",
+                "Setting realistic AI expectations"
+            ],
+            proficiency: "basic",
+            industryRelevance: ["All Sectors", "Client Services"],
+            tags: ["Communication", "Client Relations", "Education"],
+            detailedDescription: "This skill involves being able to communicate effectively about AI with colleagues, clients, and stakeholders who may not have technical backgrounds. It includes explaining AI benefits in business terms, being transparent about limitations and risks, and setting realistic expectations for AI implementations. This skill helps build trust and understanding around AI initiatives in accounting practices."
+        },
+
         // Core Technical Skills
         {
             id: 1,
