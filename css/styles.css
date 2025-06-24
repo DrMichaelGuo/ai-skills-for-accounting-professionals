@@ -694,6 +694,17 @@ body {
     font-size: var(--font-size-lg);
 }
 
+.rse-link {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.rse-link:hover {
+    color: var(--primary-blue-hover);
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
