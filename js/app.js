@@ -267,6 +267,67 @@ function scrollToSkills() {
     app.smoothScrollTo('#skills');
 }
 
+function showHowToUse() {
+    const modal = document.getElementById('skillModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalCategory = document.getElementById('modalCategory');
+    const modalDescription = document.getElementById('modalDescription');
+    const modalApplications = document.getElementById('modalApplications');
+    const modalProficiency = document.getElementById('modalProficiency');
+
+    modalTitle.textContent = 'How to Use This Database';
+    modalCategory.innerHTML = '';
+    
+    modalDescription.innerHTML = `
+        <h4>Getting Started</h4>
+        <p>This AI Skills Database helps accounting professionals, educators, and students explore and develop AI competencies. Here's how to make the most of it:</p>
+    `;
+
+    modalApplications.innerHTML = `
+        <h4>Navigation Guide</h4>
+        <ul>
+            <li><strong>Browse All Skills:</strong> Scroll through the complete collection of 15 AI skills organised by category</li>
+            <li><strong>Filter by Category:</strong> Use the tabs to focus on Core Technical, Strategic & Advisory, or Complementary Human skills</li>
+            <li><strong>Filter by Level:</strong> Select Basic, Intermediate, or Advanced to match your current expertise</li>
+            <li><strong>Search Skills:</strong> Type keywords in the search bar to find specific skills or applications</li>
+            <li><strong>View Details:</strong> Click any skill card to see detailed descriptions, applications, and proficiency requirements</li>
+        </ul>
+    `;
+
+    modalProficiency.innerHTML = `
+        <h4>Proficiency Levels Explained</h4>
+        <div class="proficiency-guide">
+            <div class="proficiency-level">
+                <div class="proficiency-dots">
+                    <span class="proficiency-dot filled"></span>
+                    <span class="proficiency-dot"></span>
+                    <span class="proficiency-dot"></span>
+                </div>
+                <span><strong>Basic:</strong> Foundational awareness and understanding - suitable for beginners</span>
+            </div>
+            <div class="proficiency-level">
+                <div class="proficiency-dots">
+                    <span class="proficiency-dot filled"></span>
+                    <span class="proficiency-dot filled"></span>
+                    <span class="proficiency-dot"></span>
+                </div>
+                <span><strong>Intermediate:</strong> Practical implementation and customisation capabilities</span>
+            </div>
+            <div class="proficiency-level">
+                <div class="proficiency-dots">
+                    <span class="proficiency-dot filled"></span>
+                    <span class="proficiency-dot filled"></span>
+                    <span class="proficiency-dot filled"></span>
+                </div>
+                <span><strong>Advanced:</strong> Expert-level design, leadership, and strategic implementation</span>
+            </div>
+        </div>
+    `;
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
 function performSearch() {
     app.performSearch();
 }
