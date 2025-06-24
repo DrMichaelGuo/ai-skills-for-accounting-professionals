@@ -230,9 +230,16 @@ class AISkillsApp {
     smoothScrollTo(target) {
         const element = document.querySelector(target);
         if (element) {
-            element.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+            // Get the header height to offset the scroll position
+            const header = document.querySelector('.nav-header');
+            const headerHeight = header ? header.offsetHeight : 0;
+            
+            // Calculate the target position minus the header height
+            const elementPosition = element.offsetTop - headerHeight;
+            
+            window.scrollTo({
+                top: elementPosition,
+                behavior: 'smooth'
             });
         }
     }
