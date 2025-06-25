@@ -293,7 +293,7 @@ function showHowToUse() {
     modalApplications.innerHTML = `
         <h4>Navigation Guide</h4>
         <ul>
-            <li><strong>Browse All Skills:</strong> Scroll through the complete collection of 15 AI skills organised by category</li>
+            <li><strong>Browse All Skills:</strong> Scroll through the complete collection of AI skills organised by category</li>
             <li><strong>Filter by Category:</strong> Use the tabs to focus on Core Technical, Strategic & Advisory, or Complementary Human skills</li>
             <li><strong>Filter by Level:</strong> Select Basic, Intermediate, or Advanced to match your current expertise</li>
             <li><strong>Search Skills:</strong> Type keywords in the search bar to find specific skills or applications</li>
